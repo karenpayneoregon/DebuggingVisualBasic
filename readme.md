@@ -11,3 +11,5 @@ Also provides basic exception handling dealing when an assembly can not be locat
 
 ## Logging
 Basic logging for debug purposes using a singleton.
+
+> The repository name is not a mistake, there will be other articles using this repo.
