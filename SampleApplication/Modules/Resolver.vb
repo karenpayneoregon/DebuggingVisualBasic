@@ -4,7 +4,8 @@ Imports System.Reflection
 Namespace Modules
     Module Resolver
         ''' <summary>
-        ''' This handler is called only when the common language runtime tries to bind to the assembly and fails.        
+        ''' This handler is called only when the common language runtime 
+        ''' tries to bind to the assembly and fails.        
         ''' </summary>
         ''' <param name="sender"></param>
         ''' <param name="args"></param>

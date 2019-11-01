@@ -1,0 +1,2 @@
+﻿### Custom log library
+This project shows how to roll your own class to log to text files. Note there are plenty of free libraries on the web [listed here](https://github.com/quozd/awesome-dotnet#logging).

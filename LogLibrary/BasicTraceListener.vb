@@ -100,6 +100,7 @@ Public NotInheritable Class BasicTraceListener
     ''' <returns></returns>
     Public Property WriteToTraceFile() As Boolean
     Private Sub WriteEntry(ByVal message As String, ByVal type As String, ByVal callerName As String)
+
         If _textWriterTraceListener Is Nothing Then
             Return
         End If
@@ -109,5 +110,6 @@ Public NotInheritable Class BasicTraceListener
 
         _textWriterTraceListener.Flush()
         _textWriterTraceListener.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss},{type},{callerName},{message}")
+
     End Sub
 End Class

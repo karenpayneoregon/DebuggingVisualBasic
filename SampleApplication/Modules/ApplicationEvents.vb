@@ -25,12 +25,15 @@ Namespace My
 
         Private Sub MyApplication_Startup(sender As Object, e As StartupEventArgs) Handles Me.Startup
 
+            AddHandler AppDomain.CurrentDomain.AssemblyResolve,
+                AddressOf Modules.ResolveEventHandler
+
             NormalShutDown = True
             '
             ' Configure Listener
             '
-            BasicTraceListener.Instance.CreateLog(AppSettings("SidesListenerLogName"), AppSettings("SidesListenerName"))
-            BasicTraceListener.Instance.WriteToTraceFile = CType(AppSettings("SidesListenerWriteEnabled"), Boolean)
+            BasicTraceListener.Instance.CreateLog(AppSettings("AppListenerLogName"), AppSettings("AppListenerName"))
+            BasicTraceListener.Instance.WriteToTraceFile = CType(AppSettings("AppListenerWriteEnabled"), Boolean)
 
         End Sub
 
