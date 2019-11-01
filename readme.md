@@ -16,3 +16,5 @@ Basic logging for debug purposes using a singleton.
 
 Microsoft TechNet article [VB.NET Dynamically load assemblies](https://social.technet.microsoft.com/wiki/contents/articles/53408.vb-net-dynamically-load-assemblies.aspx)
 
+https://karenpayneoregon.github.io/DebuggingVisualBasic/
+
