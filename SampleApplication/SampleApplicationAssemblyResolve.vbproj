@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{83A5CE05-C39A-4833-83D2-54700EFDF233}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>SampleApplication.My.MyApplication</StartupObject>
-    <RootNamespace>SampleApplication</RootNamespace>
-    <AssemblyName>SampleApplication</AssemblyName>
+    <StartupObject>SampleApplicationAssemblyResolve.My.MyApplication</StartupObject>
+    <RootNamespace>SampleApplicationAssemblyResolve</RootNamespace>
+    <AssemblyName>SampleApplicationAssemblyResolve</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>SampleApplication.xml</DocumentationFile>
+    <DocumentationFile>SampleApplicationAssemblyResolve.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>SampleApplication.xml</DocumentationFile>
+    <DocumentationFile>SampleApplicationAssemblyResolve.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -74,7 +74,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Modules\ApplicationEvents.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +122,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConcreteClasses\ConcreteClasses.vbproj">

@@ -5,7 +5,8 @@ Imports System.Configuration.ConfigurationManager
 Namespace My
     Partial Friend Class MyApplication
         Private Property NormalShutDown() As Boolean
-        Private Sub MyApplication_UnhandledException(sender As Object, e As UnhandledExceptionEventArgs) Handles Me.UnhandledException
+        Private Sub MyApplication_UnhandledException(sender As Object, e As UnhandledExceptionEventArgs) _
+            Handles Me.UnhandledException
 
             NormalShutDown = False
 
